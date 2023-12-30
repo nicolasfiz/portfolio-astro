@@ -1,0 +1,47 @@
+---
+import Badge from '../components/Badge.astro';
+import Layout from '../layouts/Layout.astro';
+import LinkedInIcon from '../icons/LinkedInIcon.astro';
+import SocialPill from '../components/SocialPill.astro';
+import GitHubIcon from '../icons/GitHubIcon.astro';
+import MailIcon from '../icons/MailIcon.astro';
+---
+
+<Layout
+  title="Portfolio de Nicolás Fiz - Desarrollador Full Stack"
+  description="Portfolio de Nicolás Fiz, programador y desarrollador Full Stack Web con más de 2 años de experiencia."
+>
+  <main>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <h1 class="text-white text-5xl font-bold flex justify-center flex-row gap-x-4 pb-10">
+        Hola! Soy Nico🫡 <a
+          href="https://linkedin.com/in/nicolasfiz"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"><Badge>Actualmente trabajando</Badge></a
+        >
+      </h1>
+      <h2 class="text-xl opacity-80 text-wrap">
+        <span>+2 años de experiencia.</span>
+        <span class="text-yellow-300/90">Desarrollador Full Stack (Backend pref ⚙️)</span>. Viviendo actualmente en
+
+
+        <span class="text-red-300/90">Granada, España📍</span>. <span class="opacity-75"
+          >Especializado en crear soluciones óptimas y escalables 🚀.</span
+        >
+      </h2>
+
+      <nav class="flex gap-x-3 mt-8">
+        <SocialPill href="https://linkedin.com/in/nicolasfiz">
+          <LinkedInIcon class="w-6 h-6" /> LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/nicolasfiz">
+          <GitHubIcon class="w-6 h-6" /> GitHub
+        </SocialPill>
+        <SocialPill href="mailto:nicolasfiz@outlook.com">
+          <MailIcon class="w-6 h-6" /> nicolasfiz@outlook.com
+        </SocialPill>
+      </nav>
+    </section>
+  </main>
+</Layout>
